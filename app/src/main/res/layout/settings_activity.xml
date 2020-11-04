@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitleSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Listado a mostrar de manera predeterminada:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbInternal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Almacenamiento interno" />
+
+        <RadioButton
+            android:id="@+id/rbExternal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Almacenamiento externo" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btSavePreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar ajustes" />
+
+</LinearLayout>
